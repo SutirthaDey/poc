@@ -1,7 +1,7 @@
 const message = document.querySelector('form');
 const showList = document.getElementById("showList");
 
-const socket = io("http://localhost:3001");
+const socket = io("http://34.211.62.209:3000");
 
 socket.on('connection');
 

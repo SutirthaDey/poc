@@ -11,7 +11,7 @@ dotenv.config();
 // requring socket io
 const io = require('socket.io')(server,{
         cors: {
-            origin: "http://localhost:3001",
+            origin: "http://34.211.62.209:3000",
         },
 })
 
@@ -52,7 +52,7 @@ io.on("connection", socket => {
 
 async function runServer(){
     await sequelize.sync();
-    server.listen(3001, ()=>{
+    server.listen(3000, ()=>{
         console.log("Server running!");
     })
 }
