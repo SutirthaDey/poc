@@ -49,6 +49,8 @@ io.on("connection", socket => {
     })
 })
 
+console.log('1')
+
 
 async function runServer(){
     await sequelize.sync();
